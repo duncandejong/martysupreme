@@ -151,8 +151,8 @@
             </p>
           </div>
           <div class="credits flex flex-row gap-1">
-            <LazySvgoKijkwijzerLeeftijd12 class="kijkwijzer"/>
-            <!--            <LazySvgoKijkwijzerSex class="kijkwijzer"/>-->
+            <LazySvgoKijkwijzerLeeftijd16 class="kijkwijzer"/>
+            <LazySvgoKijkwijzerGeweld class="kijkwijzer"/>
             <LazySvgoKijkwijzerGrofTaalgebruik class="kijkwijzer"/>
           </div>
         </div>

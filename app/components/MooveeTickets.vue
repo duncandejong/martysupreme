@@ -126,8 +126,8 @@ onUnmounted(() => {
 <style lang="css">
 .mv_moovee-container.ticket-container {
   /* General */
-  --mv-color-primary: var(--color-primary-dark);
-  --mv-color-primary-hover: var(--color-primary);
+  --mv-color-primary: var(--btn-primary);
+  --mv-color-primary-hover: var(--btn-primary-hover);
 
   /* Base colors */
   --mv-color-base-950: var(--color-neutral-950);

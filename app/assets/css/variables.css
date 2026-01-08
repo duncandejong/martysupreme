@@ -142,8 +142,8 @@ body {
     --btn-padding-y-2xl: 0.4em;
 
     /* Variant colors */
-    --btn-primary: var(--color-primary-dark);
-    --btn-primary-hover: var(--color-primary);
+    --btn-primary: var(--color-primary);
+    --btn-primary-hover: var(--color-primary-dark);
     --btn-secondary: var(--color-secondary);
     --btn-secondary-hover: var(--color-secondary-dark);
     --btn-tertiary: var(--color-tertiary);
