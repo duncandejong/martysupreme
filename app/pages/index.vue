@@ -17,12 +17,21 @@
   <Hero vimeo-id="1152231167">
     <ClientOnly>
       <div
-          class="label self-end  hidden sm:flex uppercase absolute mt-0  flex-col gap-2">
+          class="label self-end hidden sm:flex uppercase absolute mt-0  flex-col gap-2 items-end">
         <div class="bg-white whitespace-nowrap px-2 text-sm md:text-base lg:text-lg ">
           <span v-if="isAfterRelease" class="text-primary-dark font-bold">Nu</span><span v-else
                                                                                          class="text-primary-dark font-bold">{{
             formatDate(movie.releaseDate, 'dayMonth')
           }}</span> in de bioscoop
+        </div>
+        <!-- show this label only before premiere date -->
+        <div
+            v-if="!isBeforePremiere"
+            class="bg-primary-darker text-white whitespace-nowrap px-2 text-sm md:text-base lg:text-lg">
+          <span class="text-yellow-200 font-bold">13</span>, <span class="text-yellow-200 font-bold">14</span>
+          en
+          <span
+              class="text-yellow-200 font-bold">15 januari</span> in voorpremi&eacute;re
         </div>
       </div>
 
@@ -169,6 +178,12 @@
 
       </ClientOnly>
     </h2>
+    <div
+        v-if="!isBeforePremiere"
+        class="bg-yellow-200 text-tertiary-dark uppercase whitespace-nowrap px-2 text-lg md:text-xl lg:text-2xl shadow">
+      <span class="text-primary-dark font-bold">13</span>, <span class="text-primary-dark font-bold">14</span> en <span
+        class="text-primary-dark font-bold">15 januari</span> in voorpremi&eacute;re
+    </div>
   </section>
 
   <section id="tickets"
@@ -267,6 +282,7 @@ const movie = {
 };
 
 const isAfterRelease = computed(() => new Date() >= movie.releaseDate)
+const isBeforePremiere = computed(() => new Date("2026-02-15T23:59:59") <= new Date());
 
 const footerLogos = [
   {img: "/logo-belga-films.png", alt: "Belga Films"},
