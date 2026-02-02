@@ -31,7 +31,7 @@
           <span class="text-yellow-200 font-bold">13</span>, <span class="text-yellow-200 font-bold">14</span>
           en
           <span
-              class="text-yellow-200 font-bold">15 januari</span> in voorpremi&eacute;re
+              class="text-yellow-200 font-bold">15 januari</span> in voorpremi&egrave;re
         </div>
       </div>
 
@@ -182,7 +182,7 @@
         v-if="!isBeforePremiere"
         class="bg-yellow-200 text-tertiary-dark uppercase whitespace-nowrap px-2 text-lg md:text-xl lg:text-2xl shadow">
       <span class="text-primary-dark font-bold">13</span>, <span class="text-primary-dark font-bold">14</span> en <span
-        class="text-primary-dark font-bold">15 januari</span> in voorpremi&eacute;re
+        class="text-primary-dark font-bold">15 januari</span> in voorpremi&egrave;re
     </div>
   </section>
 
