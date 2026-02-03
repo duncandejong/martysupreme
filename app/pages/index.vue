@@ -1,19 +1,5 @@
 <template xmlns="http://www.w3.org/1999/html">
 
-  <!--
-    <Navigation
-        :menuItems="[
-            { link: '#synopsis', label: 'Verhaal' },
-            { link: '#videos', label: 'Video\'s' },
-            { link: '#tickets', label: 'Tickets' },
-            { link: '#kleurplaat', label: 'Kleurplaat' },
-            { link: '#gallery', label: 'Foto\'s' },
-          ]"
-        :useScrollSpy="true"
-        :scrollSpyOffset="100"
-    />
-  -->
-
   <Hero vimeo-id="1152231167">
     <ClientOnly>
       <div
